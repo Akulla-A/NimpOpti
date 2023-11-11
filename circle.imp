@@ -19,13 +19,13 @@ function main(arg) {
   var n;
   var e;
   var l;
+  var s;
   var o;
   var g;
   var p;
   var h;
   var r;
   var a;
-  var s;
 
   i = 0;
   retour = 10;
@@ -37,17 +37,13 @@ function main(arg) {
     i = i + 1;
   }
 
-  u = 85;
   n = 110;
   e = 101;
   l = 108;
   o = 111;
   g = 103;
-  p = 112;
   h = 104;
-  r = 114;
-  a = 97;
-  s = 115;
+  u = 85;
 
   putchar(u);
   putchar(n);
@@ -57,13 +53,22 @@ function main(arg) {
   putchar(o);
   putchar(n);
   putchar(g);
+
   putchar(u);
   putchar(e);
   putchar(32);
+
+  p = 112;
   putchar(p);
   putchar(h);
+
+  r = 114;
   putchar(r);
+
+  a = 97;
   putchar(a);
+
+  s = 115;
   putchar(s);
   putchar(e);
 

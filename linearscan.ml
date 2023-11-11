@@ -33,6 +33,11 @@ let lscan_alloc nb_regs fdef =
   (* free registers allocated to intervals that stop before timestamp a,
      returns remaining intervals *)
 
+  (*List.iter(fun i ->
+    let s, l, h = i in
+    Printf.printf "%s %d %d \n" s l h;
+  ) live_intervals;*)
+
      (*
   let rec expire a l =
     failwith "not implemented"

@@ -1,0 +1,86 @@
+function test_arguments(a, b, c, d, e, f, g){
+  return a + b + c + d + e + f + g;
+}
+
+function test_recursif2(acc){
+  return acc + 5;
+}
+
+function test_recursif1(acc){
+  return test_recursif2(acc) + 4;
+}
+
+function identite(acc){
+  return acc;
+}
+
+function test_reutilisationRegistres(){
+  var u;
+  var n;
+  var e;
+  var l;
+  var o;
+  var g;
+  var p;
+  var h;
+  var r;
+  var a;
+  var s;
+
+  u = 85;
+  n = 110;
+  e = 101;
+  l = 108;
+  o = 111;
+  g = 103;
+  p = 112;
+  h = 104;
+  r = 114;
+  a = 97;
+  s = 115;
+
+  putchar(u);
+  putchar(n);
+  putchar(e);
+  putchar(32);
+  putchar(l);
+  putchar(o);
+  putchar(n);
+  putchar(g);
+  putchar(u);
+  putchar(e);
+  putchar(32);
+  putchar(p);
+  putchar(h);
+  putchar(r);
+  putchar(a);
+  putchar(s);
+  putchar(e);
+}
+
+function test_MoinsDe4Variables(){
+  var deuxPoints;
+  deuxPoints = 58;
+  putchar(deuxPoints);
+}
+
+function variable_pas_utiliser(){
+  var pas;
+  pas = 9876543;
+}
+
+function main(arg) {
+  var variable_preserver;
+  variable_preserver = 46;
+
+  putchar(test_arguments(60, 1, 2, 3, 4, 5, 9));
+  putchar(test_recursif1(92));
+  putchar(identite(115));
+  putchar(identite(58) + identite(58));
+  test_MoinsDe4Variables();
+  
+  putchar(32);
+  test_reutilisationRegistres();
+  putchar(variable_preserver);
+  variable_pas_utiliser();
+}

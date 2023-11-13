@@ -198,7 +198,9 @@ let tr_function fdef global =
           else
             (* Pas de variable globale, ni dans l'alloc, alors c'est une variable
               qui était jamais set*)
-            nop;
+            (match e with
+              | Call(_, __) -> tr_expr 0 e
+              | _ -> nop)
       )
     | If(c, s1, s2) ->
        let then_label = new_label()
